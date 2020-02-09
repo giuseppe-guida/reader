@@ -8,3 +8,5 @@ coverage
 importlib_resources
 feedparser
 html2text
+artifacts-keyring
+twine

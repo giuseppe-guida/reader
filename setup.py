@@ -12,7 +12,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 
 # This call to setup() does all the work
 setup(
-    name="realpython-reader",
+    name="giuseppeguida-realpython-reader",
     version="1.0.0",
     description="Read the latest Real Python tutorials",
     long_description=README,
