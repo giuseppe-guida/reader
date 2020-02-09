@@ -1,15 +1,9 @@
 """Tests for the reader.viewer module"""
 
-# Third party imports
-import pytest
-
 # Reader imports
 from reader import viewer
 
 
-#
-# Tests
-#
 def test_show(capsys):
     """Test that show adds information to stdout"""
     text = "Lorem ipsum dolor sit amet"

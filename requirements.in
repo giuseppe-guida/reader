@@ -1,0 +1,10 @@
+# requirements.in
+pip-tools
+setuptools
+wheel
+pytest
+pytest-cov
+coverage
+importlib_resources
+feedparser
+html2text
