@@ -33,8 +33,8 @@ steps:
     python setup.py bdist_wheel --universal
   displayName: 'Make wheel'
   
-- task: TwineAuthenticate@0
+- task: TwineAuthenticate@1
   inputs:
-    artifactFeeds: giuseppeguida
+    artifactFeed: giuseppeguida
 - script: 'twine upload -r "giuseppeguida" --config-file $(PYPIRC_PATH) dist/*.whl'
 
