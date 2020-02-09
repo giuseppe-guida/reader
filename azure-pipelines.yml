@@ -28,3 +28,8 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+- task: TwineAuthenticate@0
+  inputs:
+    artifactFeeds: 'giuseppeguida'
+- script: 'twine upload -r giuseppeguida --config-file $(PYPIRC_PATH) giuseppeguida_realpython_reader-1.0.0-py3-none-any.whl'
+
