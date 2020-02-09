@@ -28,6 +28,11 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- script: |
+    python setup.py bdist_wheel --universal
+  displayName: 'Make wheel'
+  
 - task: TwineAuthenticate@0
   inputs:
     artifactFeeds: 'giuseppeguida'
