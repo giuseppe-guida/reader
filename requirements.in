@@ -10,3 +10,4 @@ feedparser
 html2text
 artifacts-keyring
 twine
+pyspark
